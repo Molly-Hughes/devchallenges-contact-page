@@ -12,9 +12,9 @@
 
 body {
   height: auto;
-  background-image: linear-gradient(var(--lightPurple), var(--darkPurple));
+  background-image: url("resources/background.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -103,6 +103,7 @@ button {
   body {
     padding: 1.5rem;
     font-size: 1.5rem;
+    background-image: url("resources/background@2x.png");
   }
 
   main {
@@ -143,6 +144,7 @@ button {
 @media (min-width: 1350px) {
   body {
     font-size: 1.6rem;
+    background-image: url("resources/background@3x.png");
   }
 
   header,
