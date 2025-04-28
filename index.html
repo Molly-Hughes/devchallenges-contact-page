@@ -11,63 +11,79 @@
       sizes="96x96"
     />
 
+    <link rel="stylesheet" href="style.css" />
+
     <title>Contact Page | devChallenges.io</title>
-
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
   </head>
+
   <body>
-    <!-- 
-  Interested in our business pricing?
-   
-  Fill out the form to view details and we’ll contact you as soon as possible.
-  
-  Name
+    <main>
+      <img src="resources/Logo.svg" alt="Becv Logo" />
+      <header>
+        <h1>Interested in our business pricing?</h1>
+        <p>
+          Fill out the form to view details and we'll contact you as soon as
+          possible.
+        </p>
+      </header>
 
-  Ethan Johnson
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Ethan Johnson"
+            required
+          />
+        </div>
 
-  Company Email
-  
-  ethan@johnson.com
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ethan@johnson.com"
+            required
+          />
+        </div>
 
-  Company Size
+        <div>
+          <label for="company-size">Company Size</label>
+          <select name="company-size" id="company-size">
+            <option value="50-100">50-100 employees</option>
+            <option value="100-200">100-200 employees</option>
+          </select>
+        </div>
 
-  50-100 employees
-  
-  Subject
+        <div>
+          <label for="subject">Subject</label>
+          <select name="subject" id="subject">
+            <option value="building-landing-pages">
+              Building Landing Pages
+            </option>
+          </select>
+        </div>
 
-  Building Landing pages
+        <div style="grid-column: 1 / -1">
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="50-100 employees"
+            required
+          ></textarea>
+        </div>
 
-  Message
-
-  50-100 employees
-
-  Contact Sales
-  -->
+        <button type="submit">Contact Sales</button>
+      </form>
+    </main>
 
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+      Coded by <a href="https://github.com/Molly-Hughes">Molly Hughes</a> |
+      Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.

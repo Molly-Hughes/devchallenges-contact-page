@@ -1,0 +1,156 @@
+:root {
+  --lightPurple: #b74672;
+  --darkPurple: #4f219b;
+  --offwhite: #fbfafb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: auto;
+  background-image: linear-gradient(var(--lightPurple), var(--darkPurple));
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 1.25rem;
+  color: var(--offwhite);
+}
+
+header {
+  text-align: center;
+  margin: 3.5rem 1.25rem;
+}
+
+img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: var(--offwhite);
+}
+
+.author-info a {
+  text-decoration: none;
+  color: inherit;
+  font-style: italic;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+label {
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.9rem;
+  font-weight: 600;
+  border: none;
+  margin: 1.125rem 0rem;
+  font-size: 1rem;
+}
+
+input,
+select {
+  height: 3.125rem;
+}
+
+textarea {
+  height: 10rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: 600;
+  color: black;
+}
+
+button {
+  width: 100%;
+  margin: 1.25rem 0rem;
+  border-radius: 0.9rem;
+  padding: 1.25rem;
+  color: var(--darkPurple);
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  main {
+    margin: 0rem 3.125rem;
+  }
+
+  header {
+    padding: 0rem 12rem;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+    padding: 20px;
+  }
+
+  textarea,
+  button {
+    grid-column: 1 / -1;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1350px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  header,
+  form {
+    margin: 4rem 12rem;
+  }
+
+  header {
+    padding: 0rem 10rem;
+  }
+}
